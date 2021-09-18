@@ -1,7 +1,7 @@
 <template>
   <v-footer
     class="font-weight-medium"
-    color="primary"
+    color="primary darken-2"
   >
     <v-col
       class="text-center"

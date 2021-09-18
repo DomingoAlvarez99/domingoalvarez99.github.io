@@ -187,28 +187,44 @@
           ],
           details: {
             title: 'Lecrín TV',
-            description: 'Lecrín TV estaba buscando rediseñar su página web y este es el resultado. Las principales mejoras son a nivel de diseño aunque también se ha añadido una parte privada securizada con KeyCloak para poder hacer un crud de las tarifas y de las imágenes de la portada de forma dinámica.',
+            description: 'Lecrín TV estaba buscando rediseñar su página web y este es el resultado. Las principales mejoras son a nivel de diseño aunque también se ha añadido una parte privada securizada con KeyCloak para poder hacer un crud de las tarifas y de los documentos de la portada de forma dinámica.',
             links: [
               //{ icon: 'mdi-github', color: 'black', link: 'https://vuetifyjs.com/en/components/buttons/' }
             ],
             tags: [
-              { title: 'Spring Boot', backgroundColor: 'green' },
-              { title: 'PostgreSQL', backgroundColor: 'blue' },
+              { title: 'Java', backgroundColor: 'yellow darken-3' },
+              { title: 'Spring Boot', backgroundColor: 'green lighten-1' },
+              { title: 'PostgreSQL', backgroundColor: 'blue darken-2' },
               { title: 'Swagger', backgroundColor: 'green' },
               { title: 'Redis', backgroundColor: 'red' },
-              { title: 'KeyCloak', backgroundColor: 'black' },
-              { title: 'VueJS', backgroundColor: 'green' },
+              { title: 'KeyCloak', backgroundColor: 'blue lighten-2' },
+              { title: 'VueJS', backgroundColor: 'green darken-1' },
               { title: 'BootstrapVue', backgroundColor: 'purple' },
-              { title: 'Docker', backgroundColor: 'blue' }
+              { title: 'Docker', backgroundColor: 'blue' },
+              { title: 'HAProxy', backgroundColor: 'blue darken-3' },
+              { title: 'TomCat', backgroundColor: 'yellow darken-1' },
+              { title: 'Nginx', backgroundColor: 'green darken-2' },
             ],
             imgs: [
               require('@/assets/imgs/projects/ltv/admin/login.png'),
               require('@/assets/imgs/projects/ltv/admin/users.png'),
-              require('@/assets/imgs/projects/ltv/admin/services-new.png'),
+              require('@/assets/imgs/projects/ltv/admin/users-edit.png'),
+              require('@/assets/imgs/projects/ltv/admin/services.png'),
+              require('@/assets/imgs/projects/ltv/admin/services-see.png'),
+              require('@/assets/imgs/projects/ltv/admin/services-edit.png'),
+              require('@/assets/imgs/projects/ltv/admin/services-delete.png'),
+              require('@/assets/imgs/projects/ltv/admin/documents.png'),
               require('@/assets/imgs/projects/ltv/admin/403.png'),
-              require('@/assets/imgs/projects/ltv/public/404.png'),
+              require('@/assets/imgs/projects/ltv/public/home.png'),
               require('@/assets/imgs/projects/ltv/public/internet.png'),
-              require('@/assets/imgs/projects/ltv/public/contact.png')
+              require('@/assets/imgs/projects/ltv/public/internet-coverage.png'),
+              require('@/assets/imgs/projects/ltv/public/mobile-vodafone-coverage.png'),
+              require('@/assets/imgs/projects/ltv/public/mobile-apn_config.png'),
+              require('@/assets/imgs/projects/ltv/public/landline.png'),
+              require('@/assets/imgs/projects/ltv/public/television.png'),
+              require('@/assets/imgs/projects/ltv/public/about-us.png'),
+              require('@/assets/imgs/projects/ltv/public/contact.png'),
+              require('@/assets/imgs/projects/ltv/public/404.png'),
             ]
           }
         }
@@ -254,7 +270,7 @@
     font-size: 0.95em;
   }
   .v-card--reveal {
-    background-color: var(--v-primary-base);
+    background-color: var(--v-primary-darken1);
     color: white;
     align-items: center;
     bottom: 0;

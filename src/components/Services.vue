@@ -25,6 +25,7 @@
           md="4"
           lg="4"
           xl="4"
+          class="text-center"
           >
           <v-icon
             x-large
@@ -48,7 +49,7 @@
       return {
         items: [
           {
-            icon: 'mdi-cellphone-iphone',
+            icon: 'mdi-cellphone',
             title: 'ANDROID & SWIFT',
             text: 'Aplicaciones nativas en Android y en Swift.'
           },

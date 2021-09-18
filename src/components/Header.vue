@@ -73,7 +73,7 @@ export default {
           this.activeClassItem = 'portfolio'
         }
         this.sticky = true
-        this.color = 'primaryDarken1'
+        this.color = 'primary darken-2'
 
       } else {
         this.activeClassItem = ''
