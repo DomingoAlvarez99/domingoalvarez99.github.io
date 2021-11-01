@@ -190,6 +190,7 @@
             description: 'Lecrín TV estaba buscando rediseñar su página web y este es el resultado. Las principales mejoras son a nivel de diseño aunque también se ha añadido una parte privada securizada con KeyCloak para poder hacer un crud de las tarifas y de los documentos de la portada de forma dinámica.',
             links: [
               //{ icon: 'mdi-github', color: 'black', link: 'https://vuetifyjs.com/en/components/buttons/' }
+              { icon: 'mdi-web', color: 'black', link: 'https://lecrintv.com' }
             ],
             tags: [
               { title: 'Java', backgroundColor: 'yellow darken-3' },
