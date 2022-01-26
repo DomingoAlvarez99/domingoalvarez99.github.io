@@ -59,6 +59,7 @@
                       :src="item.src"
                       :lazy-src="item.src"
                       aspect-ratio="1"
+                      :class="`${hover ? '': 'item-container'}`"
                     >
                       <v-expand-transition>
                         <div
@@ -158,6 +159,10 @@
 </template>
 
 <script>
+const TYPES =  {
+  WEB: 'web',
+  ALL: 'all'
+}
   export default {
     data: () => ({
       model: 0,
@@ -173,17 +178,17 @@
       dialog: false,
       tabs: [
         { key: 'all', title: 'TODOS', css: '' },
-        { key: 'web', title: 'WEB', css: 'ml-5' },
+        { key: TYPES.WEB, title: 'WEB', css: 'ml-5' },
         //{ key: 'mobile', title: 'MÓVIL', css: 'ml-5' }
       ],
       items: [
         {
           id: 1,
           title: 'Lecrín TV',
-          type: 'web',
+          type: TYPES.WEB,
           src: require('@/assets/imgs/projects/ltv/portfolio.png'),
           technologies: [
-            'VueJS', 'Spring Boot', 'KeyCloak'
+            'JavaScript & VueJS', 'Java & Spring'
           ],
           details: {
             title: 'Lecrín TV',
@@ -194,17 +199,19 @@
             ],
             tags: [
               { title: 'Java', backgroundColor: 'yellow darken-3' },
-              { title: 'Spring Boot', backgroundColor: 'green lighten-1' },
+              { title: 'Spring', backgroundColor: 'green lighten-1' },
               { title: 'PostgreSQL', backgroundColor: 'blue darken-2' },
               { title: 'Swagger', backgroundColor: 'green' },
               { title: 'Redis', backgroundColor: 'red' },
               { title: 'KeyCloak', backgroundColor: 'blue lighten-2' },
+              { title: 'JavaScript', backgroundColor: 'yellow darken-1' },
               { title: 'VueJS', backgroundColor: 'green darken-1' },
               { title: 'BootstrapVue', backgroundColor: 'purple' },
               { title: 'Docker', backgroundColor: 'blue' },
               { title: 'HAProxy', backgroundColor: 'blue darken-3' },
               { title: 'TomCat', backgroundColor: 'yellow darken-1' },
               { title: 'Nginx', backgroundColor: 'green darken-2' },
+              { title: 'Git', backgroundColor: 'orange darken-1' },
             ],
             imgs: [
               require('@/assets/imgs/projects/ltv/admin/login.png'),
@@ -226,6 +233,75 @@
               require('@/assets/imgs/projects/ltv/public/about-us.png'),
               require('@/assets/imgs/projects/ltv/public/contact.png'),
               require('@/assets/imgs/projects/ltv/public/404.png'),
+            ]
+          }
+        },
+        {
+          id: 2,
+          title: 'U.E.D Valle de la Alegría',
+          type: TYPES.WEB,
+          src: require('@/assets/imgs/projects/ued-valle-de-la-alegria/portfolio.png'),
+          technologies: [
+            'JavaScript & VueJS'
+          ],
+          details: {
+            title: 'U.E.D Valle de la Alegría',
+            description: 'U.E.D Valle de la Alegría estaba buscando tener una página web para mostrar sus servicios y este es el resultado.',
+            links: [],
+            tags: [
+              { title: 'Java', backgroundColor: 'yellow darken-3' },
+              { title: 'Spring', backgroundColor: 'green lighten-1' },
+              { title: 'JavaScript', backgroundColor: 'yellow darken-1' },
+              { title: 'VueJS', backgroundColor: 'green darken-1' },
+              { title: 'Vuetify', backgroundColor: 'blue darken-1' },
+              { title: 'Docker', backgroundColor: 'blue' },
+              { title: 'HAProxy', backgroundColor: 'blue darken-3' },
+              { title: 'TomCat', backgroundColor: 'yellow darken-1' },
+              { title: 'Nginx', backgroundColor: 'green darken-2' },
+              { title: 'Git', backgroundColor: 'orange darken-1' },
+            ],
+            imgs: [
+              require('@/assets/imgs/projects/ued-valle-de-la-alegria/home.png'),
+              require('@/assets/imgs/projects/ued-valle-de-la-alegria/about-us.png'),
+              require('@/assets/imgs/projects/ued-valle-de-la-alegria/services.png'),
+              require('@/assets/imgs/projects/ued-valle-de-la-alegria/location.png'),
+              require('@/assets/imgs/projects/ued-valle-de-la-alegria/contact.png')
+            ]
+          }
+        },
+        {
+          id: 3,
+          title: 'Transportes Gijón',
+          type: TYPES.WEB,
+          src: require('@/assets/imgs/projects/transportes-gijon/portfolio.png'),
+          technologies: [
+            'JavaScript & VueJS'
+          ],
+          details: {
+            title: 'Transportes Gijón',
+            description: 'Transportes Gijón estaba buscando tener una página web para mostrar sus servicios y este es el resultado.',
+            links: [],
+            tags: [
+              { title: 'Java', backgroundColor: 'yellow darken-3' },
+              { title: 'Spring', backgroundColor: 'green lighten-1' },
+              { title: 'JavaScript', backgroundColor: 'yellow darken-1' },
+              { title: 'VueJS', backgroundColor: 'green darken-1' },
+              { title: 'Vuetify', backgroundColor: 'blue darken-1' },
+              { title: 'Docker', backgroundColor: 'blue' },
+              { title: 'HAProxy', backgroundColor: 'blue darken-3' },
+              { title: 'TomCat', backgroundColor: 'yellow darken-1' },
+              { title: 'Nginx', backgroundColor: 'green darken-2' },
+              { title: 'Git', backgroundColor: 'orange darken-1' },
+            ],
+            imgs: [
+              require('@/assets/imgs/projects/transportes-gijon/home.png'),
+              require('@/assets/imgs/projects/transportes-gijon/services-export.png'),
+              require('@/assets/imgs/projects/transportes-gijon/services-transport.png'),
+              require('@/assets/imgs/projects/transportes-gijon/multimedia-imgs.png'),
+              require('@/assets/imgs/projects/transportes-gijon/multimedia-videos.png'),
+              require('@/assets/imgs/projects/transportes-gijon/about-us.png'),
+              require('@/assets/imgs/projects/transportes-gijon/location.png'),
+              require('@/assets/imgs/projects/transportes-gijon/contact.png')
             ]
           }
         }
@@ -270,6 +346,12 @@
   .portfolio p {
     font-size: 0.95em;
   }
+
+  .item-container {
+    border: 2px solid var(--v-primary-darken1);
+    border-radius: 2px;
+  }
+
   .v-card--reveal {
     background-color: var(--v-primary-darken1);
     color: white;
