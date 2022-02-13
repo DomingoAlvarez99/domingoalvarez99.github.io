@@ -4,22 +4,22 @@
     <v-main>
       <router-view />
     </v-main>
-    <Footer v-show="updated"/>
+    <Footer v-show="updated" />
     <Title :value="title" />
   </v-app>
 </template>
 
 <script>
 import Title from '@/components/Title.vue';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    Title
+    Title,
   },
   data() {
     return {
@@ -34,7 +34,7 @@ export default {
       return 'Portfolio';
     },
   },
-}
+};
 </script>
 
 <style>

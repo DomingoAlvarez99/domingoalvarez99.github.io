@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "title": "Lecrín TV",
+    "type": "web",
+    "src": "imgs/projects/ltv/portfolio.png",
+    "technologies": [
+      "JavaScript & VueJS", "Java & Spring"
+    ],
+    "details": {
+      "title": "Lecrín TV",
+      "description": "Lecrín TV estaba buscando rediseñar su página web y este es el resultado. Las principales mejoras son a nivel de diseño aunque también se ha añadido una parte privada securizada con KeyCloak para poder hacer un crud de las tarifas y de los documentos de la portada de forma dinámica.",
+      "links": [
+        { "icon": "mdi-web", "color": "black", "link": "https://lecrintv.com" }
+      ],
+      "tags": [
+        { "title": "Java", "backgroundColor": "yellow darken-3" },
+        { "title": "Spring", "backgroundColor": "green lighten-1" },
+        { "title": "PostgreSQL", "backgroundColor": "blue darken-2" },
+        { "title": "Swagger", "backgroundColor": "green" },
+        { "title": "Redis", "backgroundColor": "red" },
+        { "title": "KeyCloak", "backgroundColor": "blue lighten-2" },
+        { "title": "JavaScript", "backgroundColor": "yellow darken-1" },
+        { "title": "VueJS", "backgroundColor": "green darken-1" },
+        { "title": "BootstrapVue", "backgroundColor": "purple" },
+        { "title": "Docker", "backgroundColor": "blue" },
+        { "title": "HAProxy", "backgroundColor": "blue darken-3" },
+        { "title": "TomCat", "backgroundColor": "yellow darken-1" },
+        { "title": "Nginx", "backgroundColor": "green darken-2" },
+        { "title": "Git", "backgroundColor": "orange darken-1" }
+      ],
+      "imgs": [
+        "imgs/projects/ltv/admin/login.png",
+        "imgs/projects/ltv/admin/users.png",
+        "imgs/projects/ltv/admin/users-edit.png",
+        "imgs/projects/ltv/admin/services.png",
+        "imgs/projects/ltv/admin/services-see.png",
+        "imgs/projects/ltv/admin/services-edit.png",
+        "imgs/projects/ltv/admin/services-delete.png",
+        "imgs/projects/ltv/admin/documents.png",
+        "imgs/projects/ltv/admin/403.png",
+        "imgs/projects/ltv/public/home.png",
+        "imgs/projects/ltv/public/internet.png",
+        "imgs/projects/ltv/public/internet-coverage.png",
+        "imgs/projects/ltv/public/mobile-vodafone-coverage.png",
+        "imgs/projects/ltv/public/mobile-apn_config.png",
+        "imgs/projects/ltv/public/landline.png",
+        "imgs/projects/ltv/public/television.png",
+        "imgs/projects/ltv/public/about-us.png",
+        "imgs/projects/ltv/public/contact.png",
+        "imgs/projects/ltv/public/404.png"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "U.E.D Valle de la Alegría",
+    "type": "web",
+    "src": "imgs/projects/ued-valle-de-la-alegria/portfolio.png",
+    "technologies": [
+      "JavaScript & VueJS"
+    ],
+    "details": {
+      "title": "U.E.D Valle de la Alegría",
+      "description": "U.E.D Valle de la Alegría estaba buscando tener una página web para mostrar sus servicios y este es el resultado.",
+      "links": [],
+      "tags": [
+        { "title": "Java", "backgroundColor": "yellow darken-3" },
+        { "title": "Spring", "backgroundColor": "green lighten-1" },
+        { "title": "JavaScript", "backgroundColor": "yellow darken-1" },
+        { "title": "VueJS", "backgroundColor": "green darken-1" },
+        { "title": "Vuetify", "backgroundColor": "blue darken-1" },
+        { "title": "Docker", "backgroundColor": "blue" },
+        { "title": "HAProxy", "backgroundColor": "blue darken-3" },
+        { "title": "TomCat", "backgroundColor": "yellow darken-1" },
+        { "title": "Nginx", "backgroundColor": "green darken-2" },
+        { "title": "Git", "backgroundColor": "orange darken-1" }
+      ],
+      "imgs": [
+        "imgs/projects/ued-valle-de-la-alegria/home.png",
+        "imgs/projects/ued-valle-de-la-alegria/about-us.png",
+        "imgs/projects/ued-valle-de-la-alegria/services.png",
+        "imgs/projects/ued-valle-de-la-alegria/location.png",
+        "imgs/projects/ued-valle-de-la-alegria/contact.png"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Transportes Gijón",
+    "type": "web",
+    "src": "imgs/projects/transportes-gijon/portfolio.png",
+    "technologies": [
+      "JavaScript & VueJS"
+    ],
+    "details": {
+      "title": "Transportes Gijón",
+      "description": "Transportes Gijón estaba buscando tener una página web para mostrar sus servicios y este es el resultado.",
+      "links": [],
+      "tags": [
+        { "title": "Java", "backgroundColor": "yellow darken-3" },
+        { "title": "Spring", "backgroundColor": "green lighten-1" },
+        { "title": "JavaScript", "backgroundColor": "yellow darken-1" },
+        { "title": "VueJS", "backgroundColor": "green darken-1" },
+        { "title": "Vuetify", "backgroundColor": "blue darken-1" },
+        { "title": "Docker", "backgroundColor": "blue" },
+        { "title": "HAProxy", "backgroundColor": "blue darken-3" },
+        { "title": "TomCat", "backgroundColor": "yellow darken-1" },
+        { "title": "Nginx", "backgroundColor": "green darken-2" },
+        { "title": "Git", "backgroundColor": "orange darken-1" }
+      ],
+      "imgs": [
+        "imgs/projects/transportes-gijon/home.png",
+        "imgs/projects/transportes-gijon/services-export.png",
+        "imgs/projects/transportes-gijon/services-transport.png",
+        "imgs/projects/transportes-gijon/multimedia-imgs.png",
+        "imgs/projects/transportes-gijon/multimedia-videos.png",
+        "imgs/projects/transportes-gijon/about-us.png",
+        "imgs/projects/transportes-gijon/location.png",
+        "imgs/projects/transportes-gijon/contact.png"
+      ]
+    }
+  }
+]

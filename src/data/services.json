@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "mdi-cellphone",
+    "title": "ANDROID & SWIFT"
+  },
+  {
+    "icon": "mdi-xml",
+    "title": "DISEÑO WEB"
+  },
+  {
+    "icon": "mdi-web",
+    "title": "API REST & GRAPHQL"
+  },
+  {
+    "icon": "mdi-database",
+    "title": "SQL & NO SQL"
+  },
+  {
+    "icon": "mdi-docker",
+    "title": "DOCKER"
+  },
+  {
+    "icon": "mdi-hexagon-slice-6",
+    "title": "ARQUITECTURAS LIMPIAS"
+  }
+]

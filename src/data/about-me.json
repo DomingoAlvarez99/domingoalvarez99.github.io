@@ -1,0 +1,12 @@
+{
+  "username": "dalvarez",
+  "name": "Domingo Álvarez",
+  "job": "Desarrollador FullStack Web & Móvil",
+  "github": "https://github.com/DomingoAlvarez99",
+  "linkedin": "https://www.linkedin.com/in/jos%C3%A9-domingo-%C3%A1lvarez-caba-a711ba1a7/",
+  "mail": "dalvarezcaba@gmail.com",
+  "mainDescription": "Soy un chico de {age} años que vive en Granada y que disfruta desarrollando aplicaciones. Trato de seguir buenas prácticas y de crear código sostenible. Mi motivación es la continua formación y evolución dentro de este mundo.",
+  "secondaryDescription": "Además tengo experiencia en mantener y administrar sistemas, implementar flujos de trabajo CI/CD, automatizar tareas manuales y desplegar aplicaciones en contenedores de software.",
+  "technologies": "Principalmente uso Java, Spring, JavaScript, VueJS, Git, Docker y Linux.",
+  "birthDate": "1999-04-23"
+}

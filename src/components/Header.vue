@@ -1,10 +1,5 @@
 <template>
-  <v-app-bar
-    app
-    :flat="!sticky"
-    :absolute="!sticky"
-    :color="color"
-    >
+  <v-app-bar app :flat="!sticky" :absolute="!sticky" :color="color">
     <v-container>
       <v-row justify="center">
         <v-toolbar-items>
@@ -14,15 +9,12 @@
             class="pa-3 font-weight-bold"
             :class="activeClassItem == item.reference ? 'active' : ''"
             :x-small="$vuetify.breakpoint.smAndDown"
-            @click="$vuetify.goTo(`#${item.reference}`,options )"
+            @click="$vuetify.goTo(`#${item.reference}`, options)"
             :color="activeClassItem == item.reference ? 'primary' : 'white'"
             text
           >
-            <v-icon
-              v-if="item.isIcon"
-              small
-            >{{item.icon}}</v-icon>
-            {{!item.icon ? item.title : ''}}
+            <v-icon v-if="item.isIcon" small>{{ item.icon }}</v-icon>
+            {{ !item.icon ? item.title : '' }}
           </v-btn>
         </v-toolbar-items>
       </v-row>
@@ -35,59 +27,71 @@ export default {
   data() {
     return {
       items: [
-        { reference: 'app', title: '', isIcon: true, icon: 'mdi-home'},
-        { reference: 'about', title: 'SOBRE MÍ', isIcon: false},
-        { reference: 'services', title: 'Servicios', isIcon: false},
-        { reference: 'portfolio', title: 'Portfolio', isIcon: false}
+        { reference: 'app', title: '', isIcon: true, icon: 'mdi-home' },
+        { reference: 'about', title: 'SOBRE MÍ', isIcon: false },
+        { reference: 'services', title: 'Servicios', isIcon: false },
+        { reference: 'portfolio', title: 'Portfolio', isIcon: false },
       ],
       options: {
         duration: 1400,
-        easing: 'easeInOutCubic'
-
+        easing: 'easeInOutCubic',
       },
       sticky: false,
       color: 'primary',
-      activeClassItem: ''
-    }
+      activeClassItem: '',
+    };
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll)
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    handleScroll () {
-      var aboutElement = document.getElementById('about')
-      var servicesElement = document.getElementById('services')
-      var portfolioElement = document.getElementById('portfolio')
+    getActiveClass(aboutElement, servicesElement, portfolioElement) {
+      if (
+        Math.round(window.scrollY) + 10 >= aboutElement.offsetTop &&
+        Math.round(window.scrollY) + 10 < servicesElement.offsetTop
+      )
+        return 'about';
 
-      if (window.scrollY >= aboutElement.offsetTop - 10) {
-        if (Math.round(window.scrollY) + 10 >= aboutElement.offsetTop && Math.round(window.scrollY) + 10 < servicesElement.offsetTop) {
-          this.activeClassItem = 'about'
+      if (
+        Math.round(window.scrollY) + 10 >= servicesElement.offsetTop &&
+        Math.round(window.scrollY) + 10 < portfolioElement.offsetTop
+      )
+        return 'services';
 
-        } else if(Math.round(window.scrollY) + 10 >= servicesElement.offsetTop && Math.round(window.scrollY) + 10 < portfolioElement.offsetTop) {
-          this.activeClassItem = 'services'
+      return 'portfolio';
+    },
+    handleScroll() {
+      var aboutElement = document.getElementById('about');
+      var servicesElement = document.getElementById('services');
+      var portfolioElement = document.getElementById('portfolio');
 
-        } else {
-          this.activeClassItem = 'portfolio'
-        }
-        this.sticky = true
-        this.color = 'primary darken-2'
+      if (window.scrollY < aboutElement.offsetTop - 10) {
+        this.activeClassItem = '';
+        this.sticky = false;
+        this.color = 'primary';
 
-      } else {
-        this.activeClassItem = ''
-        this.sticky = false
-        this.color = 'primary'
+        return;
       }
-    }
-  }
-}
+
+      this.activeClassItem = this.getActiveClass(
+        aboutElement,
+        servicesElement,
+        portfolioElement
+      );
+
+      this.sticky = true;
+      this.color = 'primary darken-2';
+    },
+  },
+};
 </script>
 
 <style scoped>
-  .active {
-    background-color: white;
-    border-radius: 12px!important;
-  }
+.active {
+  background-color: white;
+  border-radius: 12px !important;
+}
 </style>

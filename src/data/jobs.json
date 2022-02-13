@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "title": "Software Developer Independiente",
+        "time": "sept 2019 – presente",
+        "description": {
+            "about": "Arquitectura, análisis, desarrollo, despliegue y mantenimiento de diversos proyectos web para diferentes sectores."
+        },
+        "color": "black",
+        "tools": [
+          "Java",
+          "Spring",
+          "Hibernate",
+          "PostgreSQL",
+          "Redis",
+          "REST",
+          "KeyCloak", 
+          "JavaScript",
+          "VueJS", 
+          "Git",
+          "TomCat",
+          "Nginx",
+          "Docker",
+          "HAProxy",
+          "Linux"
+        ]
+      },
+    {
+        "id": 2,
+        "title": "FullStack Developer",
+        "company": "Icired Impagados",
+        "time": "mar 2020 – dic 2021",
+        "description": {
+            "about": "Startup sobre consulta y recobro de impagos de personas físicas y jurídicas.",
+            "functions":  {
+                "title": "En este período, entre otras cosas, mis funciones fueron:",
+                "items": [
+              "Participar en la migración de un monolito en Ruby a una arquitectura de microservicios en Java. (Implementar sistema de autenticación y autorización, sistema de mensajería distribuido en tiempo real, pasarela de pago, servicios de notificaciones, ingesta de logs centralizada..)",
+              "Desarrollar un batch para realizar procesos ETLs. (Homogeneizar datos de entrada transformando ficheros en varios formatos (csv, longitud fija, excel...) para ejecutar procesos comunes y guardar los datos en la plataforma.)",
+              "Añadir nueva funcionalidad y mejorar la plataforma.",
+              "Resolver incidencias de la plataforma."
+            ]
+          }
+        },
+        "color": "blue lighten-1",
+        "tools": [
+          "Java",
+          "Spring",
+          "Kafka",
+          "Hibernate",
+          "PostgreSQL",
+          "REST", 
+          "GraphQL",
+          "Elk Stack", 
+          "KeyCloak", 
+          "JavaScript",
+          "VueJS", 
+          "Git",
+          "Docker",
+          "Jira", 
+          "WSL 2"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "FullStack Developer",
+        "company": "Wavyssa",
+        "time": "ene 2022 – presente",
+        "description": {
+            "about": "Startup que gestiona ingresos de hoteles vacacionales.",
+            "functions":  {
+                "title": "Actualmente, mis funciones son:",
+                "items": [
+              "Desarrollar integraciones con PMSs y Channel Managers.",
+              "Añadir nueva funcionalidad y resolver incidencias de la plataforma."
+            ]
+          }
+        },
+        "color": "#785964",
+        "tools": [
+          "Java",
+          "Spring",
+          "Kafka",
+          "jOOQ",
+          "PostgreSQL",
+          "REST",
+          "KeyCloak",
+          "JavaScript",
+          "VueJS", 
+          "Git",
+          "Docker",
+          "Linux"
+        ]
+    }
+]
