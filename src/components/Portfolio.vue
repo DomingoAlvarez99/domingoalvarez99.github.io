@@ -203,12 +203,12 @@ export default {
 }
 
 .item-container {
-  border: 2px solid var(--v-primary-darken1);
+  border: 2px solid var(--v-primary-base);
   border-radius: 2px;
 }
 
 .v-card--reveal {
-  background-color: var(--v-primary-darken1);
+  background-color: var(--v-primary-base);
   color: white;
   align-items: center;
   bottom: 0;

@@ -26,7 +26,7 @@
           :dense="$vuetify.breakpoint.smAndDown"
         >
           <v-timeline-item
-            v-for="(item, i) in timelineItems"
+            v-for="(item, i) in actualTimelineItems"
             :key="i"
             :color="item.color"
             :icon="item.icon"
@@ -63,6 +63,19 @@
             </v-card>
           </v-timeline-item>
         </v-timeline>
+        <div
+          v-if="actualTimelineItems.length < timelineItems.length"
+          class="text-center mt-5"
+        >
+          <v-btn
+            class="pt-5 pb-5"
+            outlined
+            color="accent"
+            @click="displayAllItems()"
+          >
+            Mostrar más
+          </v-btn>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -86,11 +99,16 @@ export default {
       birthDate: birthDate,
       reverseTimeline: true,
       timelineItems: jobs,
+      actualTimelineItems: [],
     };
   },
   methods: {
     sortTimeline() {
       this.timelineItems.sort(({ id: a }, { id: b }) => b - a);
+      this.actualTimelineItems = this.timelineItems.slice(0, 3);
+    },
+    displayAllItems() {
+      this.actualTimelineItems = this.timelineItems;
     },
   },
   mounted() {
@@ -125,5 +143,15 @@ export default {
 .about p {
   font-size: 1.1em;
   color: rgb(85, 85, 85);
+}
+
+button:hover {
+  background-color: var(--v-accent-base);
+  color: white !important;
+}
+
+button {
+  font-size: 0.4em;
+  border: 2px solid var(--v-accent-base);
 }
 </style>
