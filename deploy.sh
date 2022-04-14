@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-github_username=DomingoAlvarez99
-
 # abort on errors
 set -e
 
@@ -18,10 +16,13 @@ git init
 git add -A
 git commit -m 'deploy'
 
+github_username=DomingoAlvarez99
+project_name=$github_username.github.io.git
+
 # if you are deploying to https://<USERNAME>.github.io
- git push -f git@github.com:$github_username/$github_username.github.io.git master
+ git push -f git@github.com:$github_username/$project_name master:gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:$github_username/portfolio.git master:gh-pages
+# git push -f git@github.com:$github_username/$project_name master:gh-pages
 
 cd -
