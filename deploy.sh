@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+github_username=DomingoAlvarez99
+
 # abort on errors
 set -e
 
@@ -17,9 +19,9 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+ git push -f git@github.com:$github_username/$github_username.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:DomingoAlvarez99/portfolio.git master:gh-pages
+# git push -f git@github.com:$github_username/portfolio.git master:gh-pages
 
 cd -
