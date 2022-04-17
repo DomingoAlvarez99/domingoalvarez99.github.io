@@ -65,11 +65,11 @@
         "id": 3,
         "title": "FullStack Developer",
         "company": "Wavyssa",
-        "time": "ene 2022 – presente",
+        "time": "ene 2022 – mar 2022",
         "description": {
             "about": "Startup que gestiona ingresos de hoteles vacacionales.",
             "functions":  {
-                "title": "Actualmente, mis funciones son:",
+                "title": "En este período, entre otras cosas, mis funciones fueron:",
                 "items": [
               "Desarrollar integraciones con PMSs y Channel Managers.",
               "Añadir nueva funcionalidad y resolver incidencias de la plataforma."
@@ -91,5 +91,34 @@
           "Docker",
           "Linux"
         ]
-    }
+    },
+    {
+      "id": 4,
+      "title": "Backend Developer",
+      "company": "Wanatruck",
+      "time": "mar 2022 – presente",
+      "description": {
+          "about": "Startup que digitaliza procesos del transporte de mercancías.",
+          "functions":  {
+              "title": "Actualmente, mis funciones son:",
+              "items": [
+                "Desarrollar integraciones con los diferentes clientes.",
+                "Añadir nueva funcionalidad y mejorar la plataforma.",
+                "Realizar web scraping."
+              ]
+        }
+      },
+      "color": "#f56600",
+      "tools": [
+        "Java",
+        "Spring",
+        "RabbitMQ",
+        "Hibernate",
+        "PostgreSQL",
+        "REST",
+        "Git",
+        "Docker",
+        "WSL 2"
+      ]
+  }
 ]

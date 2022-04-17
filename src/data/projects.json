@@ -58,7 +58,7 @@
     "type": "web",
     "src": "imgs/projects/ued-valle-de-la-alegria/portfolio.png",
     "technologies": [
-      "JavaScript & VueJS"
+      "JavaScript & VueJS", "Java & Spring"
     ],
     "details": {
       "title": "U.E.D Valle de la Alegría",
@@ -91,7 +91,7 @@
     "type": "web",
     "src": "imgs/projects/transportes-gijon/portfolio.png",
     "technologies": [
-      "JavaScript & VueJS"
+      "JavaScript & VueJS", "Java & Spring"
     ],
     "details": {
       "title": "Transportes Gijón",

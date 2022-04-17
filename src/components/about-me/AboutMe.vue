@@ -1,27 +1,14 @@
 <template>
-  <v-container id="about" class="about pt-15 pl-10 pb-15 pr-10" fluid>
-    <v-row justify="center">
+  <Page class="about" title="Sobre mí">
+    <template #content>
       <v-col cols="12">
-        <h4 class="mt-3 font-weight-medium">
-          <v-icon medium color="accent"> mdi-account </v-icon>
-          ¿Quién soy?
-        </h4>
-        <p class="mt-3">
-          {{ mainDescription.replace('{age}', age) }}
-        </p>
-        <p>
-          {{ secondaryDescription }}
-        </p>
-        <p>
-          {{ technologies }}
-        </p>
+        <p v-for="item in descripton" :key="item" v-html="item" />
+        <p v-html="technologies" />
       </v-col>
       <v-col cols="12">
-        <h4 class="mt-3 font-weight-medium">
-          <v-icon medium color="accent"> mdi-star </v-icon>
-          Experiencia
-        </h4>
+        <h2>Experiencia</h2>
         <v-timeline
+          class="mt-2"
           :reverse="reverseTimeline"
           :dense="$vuetify.breakpoint.smAndDown"
         >
@@ -34,8 +21,12 @@
           >
             <v-card :color="item.color" dark>
               <v-card-title class="text-h6">
-                {{ item.title }} {{ item.company ? `en ${item.company}` : '' }}
-                <p class="subtitle-1 my-0 white--text">
+                {{ item.title }}
+                {{ item.company ? `en ${item.company}` : '' }}
+                <p
+                  :class="!$vuetify.breakpoint.mdAndUp ? 'ml-3' : ''"
+                  class="subtitle-1 my-0 white--text"
+                >
                   {{ item.time }}
                 </p>
               </v-card-title>
@@ -46,17 +37,17 @@
                   <ul>
                     <li
                       class="mt-1"
-                      v-for="(myFunction, i) in item.description.functions
-                        .items"
+                      v-for="(f, i) in item.description.functions.items"
                       :key="i"
                     >
-                      {{ myFunction }}
+                      {{ f }}
                     </li>
                   </ul>
                 </div>
                 <div class="tools mt-4">
                   <span
-                    >Principalmente usando: {{ item.tools.join(', ') }}.</span
+                    >Principalmente usando:
+                    {{ item.tools.map((e) => `#${e}`).join(' ') }}</span
                   >
                 </div>
               </v-card-text>
@@ -68,7 +59,8 @@
           class="text-center mt-5"
         >
           <v-btn
-            class="pt-5 pb-5"
+            :ripple="false"
+            class="mt-5"
             outlined
             color="accent"
             @click="displayAllItems()"
@@ -77,26 +69,23 @@
           </v-btn>
         </div>
       </v-col>
-    </v-row>
-  </v-container>
+    </template>
+  </Page>
 </template>
 
 <script>
+import Page from '@/components/shared/Page';
 import jobs from '@/data/jobs.json';
-import {
-  mainDescription,
-  secondaryDescription,
-  technologies,
-  birthDate,
-} from '@/data/about-me.json';
+import { descripton, technologies } from '@/data/about-me.json';
 
 export default {
+  components: {
+    Page,
+  },
   data() {
     return {
-      mainDescription: mainDescription,
-      secondaryDescription: secondaryDescription,
+      descripton: descripton,
       technologies: technologies,
-      birthDate: birthDate,
       reverseTimeline: true,
       timelineItems: jobs,
       actualTimelineItems: [],
@@ -114,44 +103,19 @@ export default {
   mounted() {
     this.sortTimeline();
   },
-  computed: {
-    age() {
-      return Math.floor(
-        (new Date() - new Date(birthDate).getTime()) / 3.15576e10
-      );
-    },
-  },
 };
 </script>
 
-<style scoped>
-.about h4 {
-  font-size: 1.4em;
-  color: var(--v-accent-base);
-}
+<style lang="scss" scoped>
+.about {
+  button:hover {
+    background-color: var(--v-accent-base);
+    color: white !important;
+  }
 
-.about h5 {
-  font-size: 1.2em;
-  color: rgb(85, 85, 85);
-}
-
-.about h6 {
-  font-size: 0.8em;
-  color: ligth-gray;
-}
-
-.about p {
-  font-size: 1.1em;
-  color: rgb(85, 85, 85);
-}
-
-button:hover {
-  background-color: var(--v-accent-base);
-  color: white !important;
-}
-
-button {
-  font-size: 0.4em;
-  border: 2px solid var(--v-accent-base);
+  button {
+    font-size: 0.9rem;
+    border: 2px solid var(--v-accent-base);
+  }
 }
 </style>
