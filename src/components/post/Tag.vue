@@ -41,7 +41,7 @@ export default {
     tag(newVal) {
       this.filter = this.buildFilter(newVal);
       this.resetAnimations();
-      if (newVal) this.$root.$emit('title-updated', newVal);
+      if (newVal) this.$root.$emit('update-title', newVal);
     },
   },
 };

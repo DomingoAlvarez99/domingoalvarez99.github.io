@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "key": "lecrin-tv",
     "title": "Lecrín TV",
     "type": "web",
     "src": "imgs/projects/ltv/portfolio.png",
@@ -53,7 +53,7 @@
     }
   },
   {
-    "id": 2,
+    "key": "ued-valle-de-la-alegria",
     "title": "U.E.D Valle de la Alegría",
     "type": "web",
     "src": "imgs/projects/ued-valle-de-la-alegria/portfolio.png",
@@ -86,7 +86,7 @@
     }
   },
   {
-    "id": 3,
+    "key": "transportes-gijon",
     "title": "Transportes Gijón",
     "type": "web",
     "src": "imgs/projects/transportes-gijon/portfolio.png",

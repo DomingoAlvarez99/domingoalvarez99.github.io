@@ -45,7 +45,7 @@ const routes = [
     },
   },
   {
-    path: '/portfolio',
+    path: '/portfolio/:projectKey?',
     name: 'Portfolio',
     component: () => import('@/components/portfolio/Portfolio.vue'),
     meta: {

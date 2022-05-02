@@ -6,9 +6,9 @@
   "linkedin": "https://www.linkedin.com/in/domingoalvarez99/",
   "mail": "dalvarezcaba@gmail.com",
   "descripton": [
-    "Soy Domingo Álvarez, un <strong>desarrollador especializado en la parte de backend</strong> al que le gusta <strong>construir código limpio y eficiente</strong> cuya <strong>motivación es la continua formación y evolución dentro de este mundo.</strong>",
-    "Además tengo experiencia en <strong>mantener y administrar sistemas</strong>, <strong>implementar flujos de trabajo CI/CD</strong>, <strong>automatizar tareas manuales</strong> y desplegar aplicaciones en contenedores de software.",
+    "Soy Domingo Álvarez, un desarrollador especializado en la parte de backend al que le gusta construir código limpio y eficiente cuya motivación es la continua formación y evolución dentro de este mundo.",
+    "Además tengo experiencia en mantener y administrar sistemas, implementar flujos de trabajo CI/CD, automatizar tareas manuales y desplegar aplicaciones en contenedores de software.",
     "Estoy interesado en el desarrollo de aplicaciones donde la calidad y escalabilidad del código sean temas primordiales."
   ],
-  "technologies": "Principalmente uso <strong>#Java #Spring #JavaScript #VueJS #Git #Docker #Linux</strong>"
+  "technologies": "Principalmente uso #Java #Spring #JavaScript #VueJS #Git #Docker #Linux"
 }

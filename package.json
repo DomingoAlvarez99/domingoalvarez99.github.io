@@ -1,11 +1,14 @@
 {
   "name": "domingoalvarez99.github.io",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "major": "bash push.sh major",
+    "minor": "bash push.sh minor",
+    "patch": "bash push.sh patch"
   },
   "dependencies": {
     "core-js": "^3.6.5",

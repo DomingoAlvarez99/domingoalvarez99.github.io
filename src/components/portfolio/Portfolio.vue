@@ -5,7 +5,7 @@
         <v-row>
           <v-col
             v-for="item in filteredItems"
-            :key="item.title"
+            :key="item.name"
             cols="12"
             sm="6"
             md="6"
@@ -35,7 +35,7 @@
                         class="pt-5 pb-5"
                         outlined
                         color="white"
-                        @click="enableDialog(item.details)"
+                        @click="enableDialog(item)"
                       >
                         VER DETALLES
                       </v-btn>
@@ -128,7 +128,7 @@ export default {
   },
   data: () => ({
     model: 0,
-    currentItem: TYPES.ALL,
+    currentType: TYPES.ALL,
     currentItemDetails: {},
     dialog: false,
     tabs: [
@@ -138,9 +138,9 @@ export default {
     items: projects,
   }),
   methods: {
-    enableDialog(details) {
+    enableDialog(item) {
       this.dialog = true;
-      this.currentItemDetails = details;
+      this.currentItemDetails = item.details;
     },
     requireImg(path) {
       return require(`@/assets/${path}`);
@@ -148,21 +148,21 @@ export default {
   },
   computed: {
     filteredItems() {
-      return this.currentItem == TYPES.ALL
+      return this.currentType == TYPES.ALL
         ? this.items
-        : this.items.filter((item) => item.type === this.currentItem);
+        : this.items.filter((item) => item.type === this.currentType);
     },
   },
   mounted() {
-    let currentId = this.$route.query.id;
+    let projectKey = this.$route.params.projectKey;
 
-    if (!currentId) return;
+    if (!projectKey) return;
 
-    let currentItem = this.items.find((i) => i.id == currentId);
+    let currentProject = this.items.find((i) => i.key == projectKey);
 
-    if (!currentItem) return;
+    if (!currentProject) return;
 
-    this.enableDialog(currentItem.details);
+    this.enableDialog(currentProject);
   },
 };
 </script>

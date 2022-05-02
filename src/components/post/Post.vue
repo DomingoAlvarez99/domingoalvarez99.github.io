@@ -43,6 +43,7 @@ export default {
     findPost(url)
       .then((post) => {
         this.post = post;
+        this.$root.$emit('update-title', this.post.attributes.title);
       })
       .catch(() => {
         this.$router.push({

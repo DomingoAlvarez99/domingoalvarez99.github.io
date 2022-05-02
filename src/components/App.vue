@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     onTitleUpdatedEvent() {
-      this.$root.$on('title-updated', (newTitle) => {
+      this.$root.$on('update-title', (newTitle) => {
         this.setTitle(newTitle);
       });
     },
