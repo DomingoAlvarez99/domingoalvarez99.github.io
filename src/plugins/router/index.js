@@ -68,7 +68,6 @@ const router = new VueRouter({
   routes,
   scrollBehavior: (to) => {
     if (to.hash) {
-      console.log('entra');
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve({

@@ -1,8 +1,14 @@
 [
     {
-        "id": 1,
         "title": "Software Developer Independiente",
-        "time": "sept 2019 – presente",
+        "startedAt": {
+          "month": 9,
+          "year": 2019
+        },
+        "finishedAt": {
+          "month": 3,
+          "year": 2022
+        },
         "description": {
             "about": "Arquitectura, análisis, desarrollo, despliegue y mantenimiento de diversos proyectos web para diferentes sectores."
         },
@@ -26,10 +32,16 @@
         ]
       },
     {
-        "id": 2,
         "title": "FullStack Developer",
         "company": "Icired Impagados",
-        "time": "mar 2020 – dic 2021",
+        "startedAt": {
+          "month": 3,
+          "year": 2020
+        },
+        "finishedAt": {
+          "month": 12,
+          "year": 2021
+        },
         "description": {
             "about": "Startup sobre consulta y recobro de impagos de personas físicas y jurídicas.",
             "functions":  {
@@ -62,10 +74,16 @@
         ]
     },
     {
-        "id": 3,
         "title": "FullStack Developer",
         "company": "Wavyssa",
-        "time": "ene 2022 – mar 2022",
+        "startedAt": {
+          "month": 1,
+          "year": 2022
+        },
+        "finishedAt": {
+          "month": 3,
+          "year": 2022
+        },
         "description": {
             "about": "Startup que gestiona ingresos de hoteles vacacionales.",
             "functions":  {
@@ -93,18 +111,22 @@
         ]
     },
     {
-      "id": 4,
       "title": "Backend Developer",
       "company": "Wanatruck",
-      "time": "mar 2022 – presente",
+      "startedAt": {
+        "month": 3,
+        "year": 2022
+      },
+      "finishedAt": null,
       "description": {
           "about": "Startup que digitaliza procesos del transporte de mercancías.",
           "functions":  {
               "title": "Actualmente, mis funciones son:",
               "items": [
-                "Desarrollar integraciones con los diferentes clientes.",
-                "Añadir nueva funcionalidad y mejorar la plataforma.",
-                "Realizar web scraping."
+                "Diseñar y desarrollar una nueva plataforma en tiempo real altamente desacoplada, escalable y mantenible.",
+                "Añadir nueva funcionalidad, mejorar y resolver incidencias de la plataforma legacy.",
+                "Realizar web scraping.",
+                "Mentorizar al equipo sobre buenas prácticas de desarrollo, Hexagonal, CQRS, Event Sourcing, etc."
               ]
         }
       },
@@ -112,11 +134,17 @@
       "tools": [
         "Java",
         "Spring",
-        "RabbitMQ",
-        "Hibernate",
+        "Spring WebFlux",
+        "Spring R2DBC",
+        "SOLID",
+        "Hexagonal",
+        "DDD",
+        "CQRS",
+        "Event Sourcing",
+        "RabbitMq",
         "PostgreSQL",
-        "REST",
         "Git",
+        "ELK Stack",
         "Docker",
         "WSL 2"
       ]
