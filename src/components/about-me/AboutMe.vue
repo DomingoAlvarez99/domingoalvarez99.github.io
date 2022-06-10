@@ -72,6 +72,16 @@ import Page from '@/components/shared/Page';
 import jobs from '@/data/jobs.json';
 import { descripton, technologies } from '@/data/about-me.json';
 
+const jobsFormatted = jobs.map((job) => {
+  job.startedAt = new Date(job.startedAt.year, job.startedAt.month - 1);
+  job.finishedAt =
+    job.finishedAt != null
+      ? new Date(job.finishedAt.year, job.finishedAt.month - 1)
+      : new Date();
+
+  return job;
+});
+
 export default {
   components: {
     Page,
@@ -81,15 +91,7 @@ export default {
       descripton: descripton,
       technologies: technologies,
       reverseTimeline: true,
-      timelineItems: jobs.map((job) => {
-        job.startedAt = new Date(job.startedAt.year, job.startedAt.month - 1);
-        job.finishedAt =
-          job.finishedAt != null
-            ? new Date(job.finishedAt.year, job.finishedAt.month - 1)
-            : new Date();
-
-        return job;
-      }),
+      timelineItems: jobsFormatted,
       actualTimelineItems: [],
     };
   },
