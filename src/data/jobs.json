@@ -123,10 +123,9 @@
           "functions":  {
               "title": "Actualmente, mis funciones son:",
               "items": [
-                "Diseñar y desarrollar una nueva plataforma en tiempo real altamente desacoplada, escalable y mantenible.",
-                "Añadir nueva funcionalidad, mejorar y resolver incidencias de la plataforma legacy.",
-                "Realizar web scraping.",
-                "Mentorizar al equipo sobre buenas prácticas de desarrollo, Hexagonal, CQRS, Event Sourcing, etc."
+                "Diseñar y desarrollar una nueva aplicación en tiempo real altamente desacoplada, escalable y mantenible",
+                "Añadir nueva funcionalidad, mejorar y resolver incidencias de la aplicación legacy.",
+                "Realizar web scraping."
               ]
         }
       },
@@ -137,7 +136,8 @@
         "Spring WebFlux",
         "Spring R2DBC",
         "SOLID",
-        "Hexagonal",
+        "Hexagonal Architecture",
+        "Event Driven Architecture",
         "DDD",
         "CQRS",
         "Event Sourcing",
